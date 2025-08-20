@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jignesh Rathod | Flutter Developer Portfolio</title>
+    <meta name="description" content="Professional Flutter Developer - Mobile App Development Expert">
+    <meta name="author" content="Jignesh Rathod">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+     <div class="global-bg-pattern"></div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo" onclick="scrollToSection('home')">Jignesh</div>
+                
+                <nav class="navbar" id="navbar">
+                    <a href="#home" class="nav-link active" data-section="home">Home</a>
+                    <a href="#about" class="nav-link" data-section="about">About</a>
+                    <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                    <a href="#education" class="nav-link" data-section="education">Education</a>
+                    <a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a>
+                    <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </nav>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="bg-pattern"></div>
+        <div class="floating-particles"></div>
+        <div class="hero-decorations">
+            <div class="hero-deco deco-1"></div>
+            <div class="hero-deco deco-2"></div>
+            <div class="hero-deco deco-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h3 class="hero-greeting">Hello, It's Me</h3>
+                    <h1 class="hero-name">Jignesh Rathod</h1>
+                    <div class="hero-role">
+                        And I'm a <span class="role-text" id="roleText">Flutter Developer</span>
+                    </div>
+                    <p class="hero-description">
+                        Hi, I'm a Flutter developer focused on building modern, responsive mobile apps using Dart. 
+                        I specialize in clean UI, API integration, and cross-platform development for Android and iOS. 
+                        I have experience with Firebase, REST APIs, state management (Provider/GetX), and turning Figma designs into real apps.
+                    </p>
+                    
+                    <div class="social-media">
+                        <a href="https://wa.me/916359453558" class="social-link whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://github.com/jigneshpravinbhairathod" class="social-link github"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/_thejigs" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jignesh-rathod-2495a2366" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    
+                    <button class="btn btn-primary" onclick="downloadCV()">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </button>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-ring">
+                            <div class="profile-inner">
+                                <img src="PHOTO.jpg" alt="Jignesh Rathod" class="profile-img">
+                            </div>
+                        </div>
+                        
+                        <div class="floating-tech">
+                            <span class="tech-badge tech-1">Flutter</span>
+                            <span class="tech-badge tech-2">Firebase</span>
+                            <span class="tech-badge tech-3">Dart</span>
+                            <span class="tech-badge tech-4">API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                <p class="section-subtitle">Passionate Flutter Developer crafting innovative mobile experiences</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-subtitle">Hello, I'm Jignesh Rathod</h3>
+                    
+                    <div class="about-description">
+                        <p>
+                            I'm a passionate Flutter developer creating innovative mobile applications. 
+                            I specialize in building high-performance, cross-platform apps that deliver exceptional user experiences 
+                            on both Android and iOS platforms.
+                        </p>
+                        
+                        <p>
+                            My expertise includes Flutter/Dart development, Firebase integration, REST API implementation, 
+                            state management (Provider/GetX), and UI/UX design. I've successfully delivered mobile applications 
+                            with features like real-time data synchronization, push notifications, payment gateways, and offline functionality.
+                        </p>
+                        
+                        <p>
+                            I'm committed to writing clean, maintainable code and following industry best practices. 
+                            I enjoy collaborating with teams, solving complex problems, and continuously learning new technologies 
+                            to stay ahead in the rapidly evolving mobile development landscape.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="bg-pattern-skills"></div>
+        <div class="floating-elements">
+            <div class="floating-element element-1"></div>
+            <div class="floating-element element-2"></div>
+            <div class="floating-element element-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="text-gradient">Skills</span></h2>
+                <p class="section-subtitle">Technologies and tools I use to bring ideas to life</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card" data-color="cyan">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Flutter Development</h3>
+                    <p>Flutter, Dart, Java</p>
+                    <div class="decorative-elements">
+                        <div class="deco-1"></div>
+                        <div class="deco-2"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-color="orange">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Firebase</h3>
+                    <p>Authentication, Push Notification, Realtime Databases</p>
+                    <div class="decorative-elements">
+                        <div class="deco-1"></div>
+                        <div class="deco-2"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-color="green">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Databases</h3>
+                    <p>SQLite, REST API</p>
+                    <div class="decorative-elements">
+                        <div class="deco-1"></div>
+                        <div class="deco-2"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-color="pink">
+                    <div class="skill-icon">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <h3>Figma</h3>
+                    <p>UI/UX Design, Prototyping</p>
+                    <div class="decorative-elements">
+                        <div class="deco-1"></div>
+                        <div class="deco-2"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-skills">
+                <h3 class="tech-title">Technical Skills</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Dart</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">REST APIs</span>
+                    <span class="tech-tag">SQLite</span>
+                    <span class="tech-tag">Provider</span>
+                    <span class="tech-tag">GetX</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">GitHub</span>
+                    <span class="tech-tag">Android Studio</span>
+                    <span class="tech-tag">VS Code</span>
+                    <span class="tech-tag">Figma</span>
+                    <span class="tech-tag">UI/UX</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="bg-circles"></div>
+        <div class="education-decorations">
+            <div class="edu-deco deco-1"></div>
+            <div class="edu-deco deco-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="text-gradient">Education</span></h2>
+                <p class="section-subtitle">My academic journey in technology and development</p>
+            </div>
+            
+            <div class="education-timeline">
+                <div class="education-item" data-color="cyan">
+                    <div class="education-content">
+                        <div class="education-year">
+                            <i class="fas fa-calendar-alt"></i>
+                            2023 - 2025
+                        </div>
+                        <h3><i class="fas fa-graduation-cap"></i> Master of Science in Information Technologies</h3>
+                        <h4>Harivandana College, Rajkot</h4>
+                        <div class="education-details">
+                            <span>Saurashtra University</span>
+                            <span class="status">Status: Completed</span>
+                        </div>
+                    </div>
+                    <div class="decorative-elements">
+                        <div class="deco-1"></div>
+                        <div class="deco-2"></div>
+                    </div>
+                </div>
+                
+                <div class="education-item" data-color="purple">
+                    <div class="education-content">
+                        <div class="education-year">
+                            <i class="fas fa-calendar-alt"></i>
+                            2020 - 2023
+                        </div>
+                        <h3><i class="fas fa-graduation-cap"></i> Bachelor of Science in Information Technologies</h3>
+                        <h4>Sarasvati College, Dhoraji</h4>
+                        <div class="education-details">
+                            <span>Saurashtra University</span>
+                            <span class="status">Status: Completed</span>
+                        </div>
+                    </div>
+                    <div class="decorative-elements">
+                        <div class="deco-1"></div>
+                        <div class="deco-2"></div>
+                    </div>
+                </div>
+                
+                <div class="education-item" data-color="pink">
+                    <div class="education-content">
+                        <div class="education-year">
+                            <i class="fas fa-calendar-alt"></i>
+                            2019 - 2020
+                        </div>
+                        <h3><i class="fas fa-graduation-cap"></i> 12th Commerce</h3>
+                        <h4>Lal Bahadur School, Jamkandorana</h4>
+                        <div class="education-details">
+                            <span>Gujarat Board</span>
+                            <span class="status">Status: Completed</span>
+                        </div>
+                    </div>
+                    <div class="decorative-elements">
+                        <div class="deco-1"></div>
+                        <div class="deco-2"></div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="bg-pattern-portfolio"></div>
+        <div class="portfolio-decorations">
+            <div class="decoration-item deco-1"></div>
+            <div class="decoration-item deco-2"></div>
+            <div class="decoration-item deco-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest <span class="text-gradient">Projects</span></h2>
+                <p class="section-subtitle">Showcasing my recent work in mobile app development</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/1a1a1a/00ffff?text=Food+Delivery+App" alt="Food Delivery App">
+                        <div class="project-overlay">
+                            <a href="https://github.com/jigneshpravinbhairathod/food-delivery-app" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Food Delivery App</h3>
+                        <p>A comprehensive food delivery application with real-time order tracking, payment integration, and restaurant management system. Features include user authentication, menu browsing, cart management, and delivery status updates.</p>
+                    </div>
+                    <div class="decorative-elements">
+                        <div class="deco-1"></div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/1a1a1a/c77dff?text=Learning+Management+App" alt="Learning Management App">
+                        <div class="project-overlay">
+                            <a href="https://github.com/jigneshpravinbhairathod/learning-app" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Learning Management App</h3>
+                        <p>Educational platform for online learning with video streaming, quiz modules, progress tracking, and certificate generation. Includes features like course enrollment, discussion forums, and performance analytics.</p>
+                    </div>
+                    <div class="decorative-elements">
+                        <div class="deco-1"></div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/1a1a1a/ff1cf7?text=Healthcare+App" alt="Healthcare App">
+                        <div class="project-overlay">
+                            <a href="https://github.com/jigneshpravinbhairathod/healthcare-app" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Healthcare Management App</h3>
+                        <p>Comprehensive healthcare application with appointment booking, medical records management, prescription tracking, and telemedicine features. Includes doctor-patient communication and health monitoring tools.</p>
+                    </div>
+                    <div class="decorative-elements">
+                        <div class="deco-1"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-cta">
+                <div class="cta-buttons">
+                    <a href="https://github.com/jigneshpravinbhairathod" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i>
+                        View GitHub Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" onclick="scrollToSection('contact')">
+                        <i class="fas fa-paper-plane"></i>
+                        Start a Project
+                    </a>
+                </div>
+                <p class="cta-text">Ready to bring your app idea to life? Let's collaborate!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="bg-shapes"></div>
+        <div class="experience-decorations">
+            <div class="exp-deco deco-1"></div>
+            <div class="exp-deco deco-2"></div>
+            <div class="exp-deco deco-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="text-gradient">Experience</span></h2>
+                <p class="section-subtitle">Professional journey in mobile app development</p>
+            </div>
+            
+            <div class="experience-content">
+                <div class="experience-header">
+                    <div class="exp-year">
+                        <i class="fas fa-calendar-alt"></i>
+                        March 2025 - Present
+                    </div>
+                    <div class="exp-title">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Flutter Developer</h3>
+                    </div>
+                    <div class="exp-company">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>MDIDM Infoway</h4>
+                    </div>
+                </div>
+                
+                <div class="responsibilities">
+                    <h4><i class="fas fa-code"></i> Key Responsibilities</h4>
+                    <div class="responsibilities-grid">
+                        <div class="responsibility-item">
+                            <div class="bullet"></div>
+                            <p>Led full-cycle development of Flutter apps from planning to deployment on Android & iOS.</p>
+                        </div>
+                        <div class="responsibility-item">
+                            <div class="bullet"></div>
+                            <p>Architected clean, maintainable codebases using Dart and Provider for state management.</p>
+                        </div>
+                        <div class="responsibility-item">
+                            <div class="bullet"></div>
+                            <p>Integrated Firebase, RESTful APIs, and third-party services to enhance app functionality.</p>
+                        </div>
+                        <div class="responsibility-item">
+                            <div class="bullet"></div>
+                            <p>Collaborated closely with UI/UX designers to deliver pixel-perfect, responsive interfaces.</p>
+                        </div>
+                        <div class="responsibility-item">
+                            <div class="bullet"></div>
+                            <p>Mentored junior developers through code reviews and technical knowledge sharing.</p>
+                        </div>
+                        <div class="responsibility-item">
+                            <div class="bullet"></div>
+                            <p>Ensured app performance optimization, achieving fast load times and smooth animations.</p>
+                        </div>
+                        <div class="responsibility-item">
+                            <div class="bullet"></div>
+                            <p>Maintained code versioning and CI/CD pipelines using Git and GitHub workflows.</p>
+                        </div>
+                        <div class="responsibility-item">
+                            <div class="bullet"></div>
+                            <p>Worked in Agile sprints, actively contributing to sprint planning and backlog grooming.</p>
+                        </div>
+                        <div class="responsibility-item">
+                            <div class="bullet"></div>
+                            <p>Identified and resolved bugs, improving app stability and user experience.</p>
+                        </div>
+                        <div class="responsibility-item">
+                            <div class="bullet"></div>
+                            <p>Stayed up to date with Flutter updates and implemented best practices across all projects.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-used">
+                    <h4>Technologies Used</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Dart</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Provider</span>
+                        <span class="tech-tag">REST APIs</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">GitHub</span>
+                        <span class="tech-tag">Android Studio</span>
+                        <span class="tech-tag">VS Code</span>
+                        <span class="tech-tag">Performance Optimization</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="achievement-stats">
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Apps Deployed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Features Developed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="bg-pattern-contact"></div>
+        <div class="contact-decorations">
+            <div class="contact-deco deco-1"></div>
+            <div class="contact-deco deco-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact <span class="text-gradient">Me</span></h2>
+                <p class="section-subtitle">Let's discuss your next mobile app project</p>
+            </div>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label><i class="fas fa-user"></i> Full Name *</label>
+                        <input type="text" name="fullName" placeholder="Your full name" required>
+                    </div>
+                    <div class="input-group">
+                        <label><i class="fas fa-envelope"></i> Email Address *</label>
+                        <input type="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="input-group">
+                        <label><i class="fas fa-phone"></i> Mobile Number</label>
+                        <input type="tel" name="mobile" placeholder="+91 XXXXX XXXXX">
+                    </div>
+                    <div class="input-group">
+                        <label><i class="fas fa-comment"></i> Subject</label>
+                        <input type="text" name="subject" placeholder="Project discussion">
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <label><i class="fas fa-comment"></i> Message *</label>
+                    <textarea name="message" placeholder="Tell me about your project idea..." rows="6" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h4>Phone</h4>
+                    <p>+91 6359453558</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4>Email</h4>
+                    <p>jignesh.rathod@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4>Location</h4>
+                    <p>Gujarat, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-particles"></div>
+        <div class="footer-decorations">
+            <div class="footer-deco deco-1"></div>
+            <div class="footer-deco deco-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>
+                        Copyright &copy; 2025 by 
+                        <span class="text-gradient">Jignesh Rathod</span> 
+                        | Made with <i class="fas fa-heart heart-icon"></i> All Rights Reserved.
+                    </p>
+                </div>
+                
+                <button class="back-to-top" id="backToTop">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+            
+            <div class="footer-links">
+                <span>Flutter Developer</span>
+                <span>•</span>
+                <span>Mobile App Development</span>
+                <span>•</span>
+                <span>UI/UX Design</span>
+                <span>•</span>
+                <span>Firebase Integration</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <span class="toast-message">Message sent successfully!</span>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
