@@ -64,11 +64,11 @@ body {
 	--gradient-accent: linear-gradient(135deg, var(--neon-blue), var(--neon-green));
 	
 	/* Glows */
-	--glow-cyan: 0 0 20px rgba(0, 255, 255, 0.5);
+	/* --glow-cyan: 0 0 20px rgba(0, 255, 255, 0.5);
 	--glow-purple: 0 0 20px rgba(199, 125, 255, 0.5);
 	--glow-pink: 0 0 20px rgba(255, 28, 247, 0.5);
 	--glow-green: 0 0 20px rgba(57, 255, 20, 0.5);
-	
+	 */
 	/* Transitions */
 	--transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 	--transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -1719,6 +1719,20 @@ img {
     .education-item .education-content {
         text-align: center;
     }
+
+    /* Hero image sizing and tech badges inside frame */
+    .profile-ring {
+        width: 240px;
+        height: 240px;
+    }
+    .tech-badge {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+    .tech-1 { top: 10%; left: 5%; }
+    .tech-2 { top: 30%; right: 5%; }
+    .tech-3 { bottom: 25%; left: 5%; }
+    .tech-4 { bottom: 10%; right: 5%; }
 }
 
 
@@ -1750,6 +1764,16 @@ img {
     }
     .tech-title {
         font-size: 1.25rem;
+    }
+
+    /* Tighter hero on small devices */
+    .profile-ring {
+        width: 200px;
+        height: 200px;
+    }
+    .tech-badge {
+        padding: 3px 7px;
+        font-size: 10px;
     }
 }
 
@@ -1801,5 +1825,15 @@ img {
     }
     .input-group input, .input-group textarea {
         padding: 0.875rem;
+    }
+
+    /* Smallest phones */
+    .profile-ring {
+        width: 180px;
+        height: 180px;
+    }
+    .tech-badge {
+        padding: 3px 6px;
+        font-size: 9px;
     }
 }
