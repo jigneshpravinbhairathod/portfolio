@@ -22,13 +22,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. Sticky Navbar on Scroll
+    // 2. Sticky Navbar & Scroll Progress
     const navbar = document.getElementById('navbar');
+    const scrollProgress = document.getElementById('scroll-progress');
+    
     window.addEventListener('scroll', () => {
+        // Sticky Navbar
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
+        }
+        
+        // Scroll Progress
+        if (scrollProgress) {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            scrollProgress.style.width = scrolled + "%";
         }
     });
 
@@ -117,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 7. EmailJS Form Submission Simulation
+    // 7. Contact Form via WhatsApp
     const contactForm = document.getElementById('contactForm');
     const toast = document.getElementById('toast');
 
@@ -131,9 +142,26 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.innerHTML = 'Sending...';
             submitBtn.disabled = true;
             
-            // Simulate network delay
+            // Get form values
+            const fullName = this.fullName.value;
+            const email = this.email.value;
+            const mobile = this.mobile.value;
+            const subject = this.subject.value || 'No Subject';
+            const message = this.message.value;
+            
+            // Construct WhatsApp Message
+            const waText = `Hello Jignesh,%0A%0A*Name:* ${fullName}%0A*Email:* ${email}%0A*Mobile:* ${mobile}%0A*Subject:* ${subject}%0A%0A*Message:* ${message}`;
+            const whatsappUrl = `https://wa.me/916359453558?text=${waText}`;
+            
+            // Open WhatsApp in a new tab
+            window.open(whatsappUrl, '_blank');
+            
+            // Show Success Message
+            toast.innerHTML = "Opening WhatsApp...";
+            toast.classList.add('show');
+            
+            // Reset Form
             setTimeout(() => {
-                toast.classList.add('show');
                 contactForm.reset();
                 submitBtn.innerHTML = originalText;
                 submitBtn.disabled = false;
