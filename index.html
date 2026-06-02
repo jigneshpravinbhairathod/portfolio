@@ -22,6 +22,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress" id="scroll-progress"></div>
+    </div>
     
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
@@ -29,6 +33,7 @@
             <a href="#home" class="logo">&lt; Jignesh /&gt;</a>
             <div class="nav-links">
                 <a href="#about">About</a>
+                <a href="#services">Services</a>
                 <a href="#tech">Tech</a>
                 <a href="#projects">Projects</a>
                 <a href="#experience">Experience</a>
@@ -55,7 +60,7 @@
         <div class="hero-container container">
             <div class="hero-left">
                 <p class="greeting reveal-text">Hello! I'm Jignesh Rathod</p>
-                <h1 class="role-headline reveal-text" style="animation-delay: 0.1s;">A Software Engineer<br>Turned Flutter Expert.</h1>
+                <h1 class="role-headline reveal-text" style="animation-delay: 0.1s;">A Flutter Expert.</h1>
                 
                 <div class="quote-block reveal-text" style="animation-delay: 0.2s;">
                     <em>"I build modern, responsive mobile apps that feel crafted, not just coded."</em>
@@ -66,12 +71,13 @@
                 </p>
                 
                 <div class="hero-cta reveal-text" style="animation-delay: 0.4s;">
-                    <a href="#" class="btn btn-primary">Download Resume</a>
+                    <a href="jignesh_rathod_flutter_developer_resume-2.pdf" download class="btn btn-primary">Download Resume</a>
                     <div class="social-row">
-                        <a href="https://github.com/jigneshpravinbhairathod" target="_blank"><i data-lucide="github"></i></a>
-                        <a href="https://www.linkedin.com/in/jignesh-rathod-2495a2366" target="_blank"><i data-lucide="linkedin"></i></a>
-                        <a href="https://wa.me/916359453558" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.instagram.com/_thejigs" target="_blank"><i data-lucide="instagram"></i></a>
+                        <a href="https://github.com/jigneshpravinbhairathod" target="_blank" title="GitHub"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="https://www.linkedin.com/in/jigneshrathod1102/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a href="https://wa.me/916359453558" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp fa-lg"></i></a>
+                        <a href="https://www.instagram.com/_thejigs" target="_blank" title="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="tel:+916359453558" title="Call"><i class="fas fa-phone-alt fa-lg"></i></a>
                     </div>
                 </div>
             </div>
@@ -100,6 +106,33 @@
                 <p>My expertise includes Flutter/Dart development, Firebase integration, REST API implementation, state management (Provider/GetX), and UI/UX design. I've successfully delivered mobile applications with features like real-time data synchronization, push notifications, payment gateways, and offline functionality.</p>
                 <br>
                 <p>I'm committed to writing clean, maintainable code and following industry best practices. I enjoy collaborating with teams, solving complex problems, and continuously learning new technologies to stay ahead in the rapidly evolving mobile development landscape.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="services">
+        <div class="container reveal-on-scroll">
+            <div class="section-header">
+                <h2>My Services</h2>
+                <p class="subtitle">Professional, SEO-friendly, and custom Flutter development solutions.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card project-card">
+                    <i class="fas fa-mobile-alt service-icon"></i>
+                    <h3>Custom Flutter App Development</h3>
+                    <p>I build high-performance, responsive, and scalable mobile applications for both Android and iOS using a single Flutter codebase. I ensure a seamless native-like experience perfectly tailored to your business goals.</p>
+                </div>
+                <div class="service-card project-card">
+                    <i class="fas fa-paint-brush service-icon"></i>
+                    <h3>UI/UX Implementation</h3>
+                    <p>Transforming Figma designs into pixel-perfect, interactive, and user-friendly mobile interfaces. I prioritize intuitive navigation and modern aesthetics with micro-animations that engage your users.</p>
+                </div>
+                <div class="service-card project-card">
+                    <i class="fas fa-server service-icon"></i>
+                    <h3>API & Backend Integration</h3>
+                    <p>Robust backend integration with RESTful APIs, Firebase Authentication, Cloud Firestore, and real-time databases for secure, dynamic, and data-driven mobile applications.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -183,53 +216,117 @@
                 
                 <div class="project-card">
                     <div class="card-content">
-                        <h3>Food Delivery App</h3>
-                        <p>A comprehensive food delivery application with real-time order tracking, payment integration, and restaurant management system. Features include user authentication, menu browsing, cart management, and delivery status updates.</p>
+                        <h3>Detroja parivar App</h3>
+                        <p>Community app for Detroja parivar with features like event management, member directory, and communication tools.</p>
                         <div class="tags">
                             <span class="tag">Flutter</span>
-                            <span class="tag">Firebase</span>
                             <span class="tag">REST API</span>
                         </div>
                     </div>
                     <div class="card-links">
-                        <a href="https://github.com/jigneshpravinbhairathod/food-delivery-app" target="_blank" class="card-link"><i data-lucide="github"></i> Source Code</a>
+                        <a href="https://play.google.com/store/search?q=detroja&c=apps" target="_blank" class="card-link"><i data-lucide="github"></i>Check Now</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="card-content">
-                        <h3>Learning Management</h3>
-                        <p>Educational platform for online learning with video streaming, quiz modules, progress tracking, and certificate generation. Includes features like course enrollment, discussion forums, and performance analytics.</p>
+                        <h3>LPBH amreli</h3>
+                        <p>Local community app for Amreli district with features like business listings, events, and local news.</p>
                         <div class="tags">
                             <span class="tag">Flutter</span>
                             <span class="tag">Dart</span>
-                            <span class="tag">Provider</span>
+                            <span class="tag">getx</span>
                         </div>
                     </div>
                     <div class="card-links">
-                        <a href="https://github.com/jigneshpravinbhairathod/learning-app" target="_blank" class="card-link"><i data-lucide="github"></i> Source Code</a>
+                        <a href="https://github.com/jigneshpravinbhairathod/learning-app" target="_blank" class="card-link"><i data-lucide="github"></i>Check Now</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="card-content">
-                        <h3>Healthcare App</h3>
-                        <p>Comprehensive healthcare application with appointment booking, medical records management, prescription tracking, and telemedicine features. Includes doctor-patient communication and health monitoring tools.</p>
+                        <h3>Settingwala</h3>
+                        <p>Settingwala is a modern and trusted dating app for singles who want to meet new people, build real connections, and create meaningful relationships. Whether you are searching for love, friendship, casual dating, or someone to talk to, Settingwala gives you a simple and safe platform to connect with people around you.</p>
                         <div class="tags">
                             <span class="tag">Flutter</span>
                             <span class="tag">SQLite</span>
                             <span class="tag">GetX</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Dart</span>
+                            <span class="tag">REST API</span>
+
                         </div>
                     </div>
                     <div class="card-links">
-                        <a href="https://github.com/jigneshpravinbhairathod/healthcare-app" target="_blank" class="card-link"><i data-lucide="github"></i> Source Code</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.rektech.settingwalaapp" target="_blank" class="card-link"><i data-lucide="github"></i>Check Now</a>
                     </div>
                 </div>
 
+
+                    <div class="project-card">
+                    <div class="card-content">
+                        <h3>R-Property-Hub</h3>
+                        <p>Property Details Viewer is a simple, lightweight app designed to display property information in a clean and organized way. The app focuses on clarity and ease of use, allowing users to view all property-related details without distractions.</p>
+                        <div class="tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">GetX</span>
+                            <span class="tag">Dart</span>
+                            <span class="tag">REST API</span>
+
+                        </div>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.app.rpropertyhub" target="_blank" class="card-link"><i data-lucide="github"></i>Check Now</a>
+                    </div>
+                </div>
+                
+
+                    <div class="project-card">
+                    <div class="card-content">
+                        <h3>Reel se Real Movie Star</h3>
+                        <p>Movie Auditions is a professional casting and talent discovery platform designed specifically for casting directors, filmmakers, production houses, and industry professionals. The app simplifies how casting calls, movie auditions, and role requirements are shared with actors and performers, creating a structured and efficient casting workflow.</p>
+                        <div class="tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">GetX</span>
+                            <span class="tag">Dart</span>
+                            <span class="tag">REST API</span>
+
+                        </div>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.app.rpropertyhub" target="_blank" class="card-link"><i data-lucide="github"></i>Check Now</a>
+                    </div>
+                </div>
             </div>
             
             <div class="projects-footer">
                 <a href="https://github.com/jigneshpravinbhairathod" target="_blank" class="inline-link">See More on GitHub <i data-lucide="arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Source Articles Section -->
+    <section class="articles section-padding" id="articles">
+        <div class="container reveal-on-scroll">
+            <div class="section-header">
+                <h2>Open Source Contributions</h2>
+                <p class="subtitle">My packages published on pub.dev for the Flutter community.</p>
+            </div>
+            <div class="project-card pub-card">
+                <div class="card-content">
+                    <div class="pub-badge"><i class="fas fa-box-open"></i> Pub.dev Package</div>
+                    <h3>easy_app_links</h3>
+                    <p>A powerful and easy-to-use Flutter package for handling deep links and app links smoothly. It streamlines URL routing and navigation in Flutter applications, providing a seamless user experience across iOS and Android platforms.</p>
+                    <div class="tags">
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Dart</span>
+                        <span class="tag">Deep Linking</span>
+                        <span class="tag">App Links</span>
+                    </div>
+                </div>
+                <div class="card-links">
+                    <a href="https://pub.dev/packages/easy_app_links" target="_blank" class="card-link"><i class="fas fa-external-link-alt"></i> View on pub.dev</a>
+                </div>
             </div>
         </div>
     </section>
@@ -243,11 +340,44 @@
             </div>
             
             <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Feb 2026 - Present</span>
+                        <h3 class="timeline-title">Flutter Developer</h3>
+                        <h4 class="timeline-subtitle">Retro Developers</h4>
+                        <ul class="timeline-bullets">
+                            <li>Led full-cycle development of Flutter apps from planning to deployment on Android & iOS.</li>
+                            <li>Architected clean, maintainable codebases using Dart and Provider for state management.</li>
+                            <li>Integrated Firebase, RESTful APIs, and third-party services to enhance app functionality.</li>
+                            <li>Collaborated closely with UI/UX designers to deliver pixel-perfect, responsive interfaces.</li>
+                            <li>Mentored junior developers through code reviews and technical knowledge sharing.</li>
+                            <li>Ensured app performance optimization, achieving fast load times and smooth animations.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Nov 2025 - Feb 2026</span>
+                        <h3 class="timeline-title">Flutter Developer</h3>
+                        <h4 class="timeline-subtitle">rektech</h4>
+                        <ul class="timeline-bullets">
+                            <li>Led full-cycle development of Flutter apps from planning to deployment on Android & iOS.</li>
+                            <li>Architected clean, maintainable codebases using Dart and Provider for state management.</li>
+                            <li>Integrated Firebase, RESTful APIs, and third-party services to enhance app functionality.</li>
+                            <li>Collaborated closely with UI/UX designers to deliver pixel-perfect, responsive interfaces.</li>
+                            <li>Mentored junior developers through code reviews and technical knowledge sharing.</li>
+                            <li>Ensured app performance optimization, achieving fast load times and smooth animations.</li>
+                        </ul>
+                    </div>
+                </div>
                 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">MAR 2025 - PRESENT</span>
+                        <span class="timeline-date">MAR 2025 - NOV 2025</span>
                         <h3 class="timeline-title">Flutter Developer</h3>
                         <h4 class="timeline-subtitle">MDIDM INFOWAY</h4>
                         <ul class="timeline-bullets">
