@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jignesh Rathod | Software Engineer</title>
+    <title>Jignesh Rathod | Flutter Developer | Mobile App Expert</title>
     <meta name="description" content="Professional Flutter Developer - Mobile App Development Expert">
     <meta name="author" content="Jignesh Rathod">
+    
+    <!-- Favicon & Open Graph Meta Tags -->
+    <link rel="icon" type="image/png" href="PHOTO.png">
+    <meta property="og:title" content="Jignesh Rathod | Flutter Expert">
+    <meta property="og:description" content="Professional Flutter Developer specializing in custom mobile applications, UI/UX, and API integration.">
+    <meta property="og:image" content="PHOTO.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jigneshrathod.dev">
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,8 +26,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     
-    <!-- EmailJS -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Scroll Progress -->
@@ -33,14 +39,13 @@
             <a href="#home" class="logo">&lt; Jignesh /&gt;</a>
             <div class="nav-links">
                 <a href="#about">About</a>
-                <a href="#services">Services</a>
                 <a href="#tech">Tech</a>
                 <a href="#projects">Projects</a>
                 <a href="#experience">Experience</a>
                 <a href="#contact">Contact</a>
             </div>
             <a href="#contact" class="btn btn-nav">LET'S CHAT</a>
-            <button class="mobile-toggle" id="mobile-toggle">
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
                 <i data-lucide="menu"></i>
             </button>
         </div>
@@ -73,9 +78,9 @@
                 <div class="hero-cta reveal-text" style="animation-delay: 0.4s;">
                     <a href="jignesh_rathod_flutter_developer_resume-2.pdf" download class="btn btn-primary">Download Resume</a>
                     <div class="social-row">
-                        <a href="https://github.com/jigneshpravinbhairathod" target="_blank" title="GitHub"><i class="fab fa-github fa-lg"></i></a>
                         <a href="https://www.linkedin.com/in/jigneshrathod1102/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in fa-lg"></i></a>
                         <a href="https://wa.me/916359453558" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp fa-lg"></i></a>
+                        <a href="mailto:jigneshrathod1102@gmail.com" title="Email"><i class="fas fa-envelope fa-lg"></i></a>
                         <a href="https://www.instagram.com/_thejigs" target="_blank" title="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
                         <a href="tel:+916359453558" title="Call"><i class="fas fa-phone-alt fa-lg"></i></a>
                     </div>
@@ -84,7 +89,7 @@
             
             <div class="hero-right reveal-fade" style="animation-delay: 0.5s;">
                 <div class="photo-container">
-                    <img src="PHOTO.jpg" alt="Jignesh Rathod" class="profile-photo">
+                    <img src="PHOTO.png" alt="Jignesh Rathod" class="profile-photo">
                     <div class="photo-decoration"></div>
                 </div>
             </div>
@@ -96,43 +101,15 @@
         <div class="container about-grid reveal-on-scroll">
             <div class="about-left">
                 <span class="section-label">01. ABOUT ME</span>
-                <div class="pull-quote">
+                <p>
                     Creating innovative mobile applications that deliver exceptional user experiences on both Android and iOS platforms.
-                </div>
-            </div>
-            <div class="about-right">
+                </p>
+                <br>
                 <p>I'm a passionate Flutter developer creating innovative mobile applications. I specialize in building high-performance, cross-platform apps that deliver exceptional user experiences on both Android and iOS platforms.</p>
                 <br>
                 <p>My expertise includes Flutter/Dart development, Firebase integration, REST API implementation, state management (Provider/GetX), and UI/UX design. I've successfully delivered mobile applications with features like real-time data synchronization, push notifications, payment gateways, and offline functionality.</p>
                 <br>
                 <p>I'm committed to writing clean, maintainable code and following industry best practices. I enjoy collaborating with teams, solving complex problems, and continuously learning new technologies to stay ahead in the rapidly evolving mobile development landscape.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services section-padding" id="services">
-        <div class="container reveal-on-scroll">
-            <div class="section-header">
-                <h2>My Services</h2>
-                <p class="subtitle">Professional, SEO-friendly, and custom Flutter development solutions.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card project-card">
-                    <i class="fas fa-mobile-alt service-icon"></i>
-                    <h3>Custom Flutter App Development</h3>
-                    <p>I build high-performance, responsive, and scalable mobile applications for both Android and iOS using a single Flutter codebase. I ensure a seamless native-like experience perfectly tailored to your business goals.</p>
-                </div>
-                <div class="service-card project-card">
-                    <i class="fas fa-paint-brush service-icon"></i>
-                    <h3>UI/UX Implementation</h3>
-                    <p>Transforming Figma designs into pixel-perfect, interactive, and user-friendly mobile interfaces. I prioritize intuitive navigation and modern aesthetics with micro-animations that engage your users.</p>
-                </div>
-                <div class="service-card project-card">
-                    <i class="fas fa-server service-icon"></i>
-                    <h3>API & Backend Integration</h3>
-                    <p>Robust backend integration with RESTful APIs, Firebase Authentication, Cloud Firestore, and real-time databases for secure, dynamic, and data-driven mobile applications.</p>
-                </div>
             </div>
         </div>
     </section>
@@ -177,29 +154,10 @@
                         <div class="tech-pill"><i class="fab fa-figma"></i> Figma</div>
                         <div class="tech-pill"><i class="fas fa-paint-brush"></i> UI/UX Design</div>
                         <div class="tech-pill"><i class="fab fa-git-alt"></i> Git</div>
-                        <div class="tech-pill"><i class="fab fa-github"></i> GitHub</div>
                         <div class="tech-pill"><i class="fas fa-laptop-code"></i> VS Code</div>
                         <div class="tech-pill"><i class="fab fa-android"></i> Android Studio</div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats section-padding">
-        <div class="container stats-container reveal-on-scroll">
-            <div class="stat-item">
-                <div class="stat-number" data-target="15">0</div>
-                <div class="stat-label">APPS DEPLOYED</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-target="50">0</div>
-                <div class="stat-label">FEATURES SHIPPED</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-target="99">0</div>
-                <div class="stat-label">% SATISFACTION</div>
             </div>
         </div>
     </section>
@@ -215,38 +173,38 @@
             <div class="project-grid">
                 
                 <div class="project-card">
+                    <div class="card-image"><img src="detroja.png" alt="Detroja Parivar App"></div>
                     <div class="card-content">
-                        <h3>Detroja parivar App</h3>
-                        <p>Community app for Detroja parivar with features like event management, member directory, and communication tools.</p>
+                        <h3>Detroja Parivar App</h3>
+                        <p>A comprehensive community engagement app featuring event management, dynamic member directories, and secure communication tools built with Flutter.</p>
                         <div class="tags">
                             <span class="tag">Flutter</span>
                             <span class="tag">REST API</span>
                         </div>
                     </div>
                     <div class="card-links">
-                        <a href="https://play.google.com/store/search?q=detroja&c=apps" target="_blank" class="card-link"><i data-lucide="github"></i>Check Now</a>
+                        <a href="https://play.google.com/store/search?q=detroja&c=apps" target="_blank" class="card-link"><i class="fab fa-google-play"></i>Check on Play Store</a>
                     </div>
                 </div>
 
                 <div class="project-card">
+                    <div class="card-image"><img src="lpbh.png" alt="LPBH Amreli"></div>
                     <div class="card-content">
-                        <h3>LPBH amreli</h3>
-                        <p>Local community app for Amreli district with features like business listings, events, and local news.</p>
+                        <h3>LPBH Amreli</h3>
+                        <p>A localized networking platform for the Amreli district, providing real-time local news updates, business directory listings, and interactive event scheduling.</p>
                         <div class="tags">
                             <span class="tag">Flutter</span>
                             <span class="tag">Dart</span>
-                            <span class="tag">getx</span>
+                            <span class="tag">GetX</span>
                         </div>
-                    </div>
-                    <div class="card-links">
-                        <a href="https://github.com/jigneshpravinbhairathod/learning-app" target="_blank" class="card-link"><i data-lucide="github"></i>Check Now</a>
                     </div>
                 </div>
 
                 <div class="project-card">
+                    <div class="card-image"><img src="settingwala.png" alt="Settingwala"></div>
                     <div class="card-content">
                         <h3>Settingwala</h3>
-                        <p>Settingwala is a modern and trusted dating app for singles who want to meet new people, build real connections, and create meaningful relationships. Whether you are searching for love, friendship, casual dating, or someone to talk to, Settingwala gives you a simple and safe platform to connect with people around you.</p>
+                        <p>A highly secure and modern dating application designed for meaningful connections. Features seamless matchmaking, real-time chat, and intuitive user profiles.</p>
                         <div class="tags">
                             <span class="tag">Flutter</span>
                             <span class="tag">SQLite</span>
@@ -254,19 +212,19 @@
                             <span class="tag">Firebase</span>
                             <span class="tag">Dart</span>
                             <span class="tag">REST API</span>
-
                         </div>
                     </div>
                     <div class="card-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.rektech.settingwalaapp" target="_blank" class="card-link"><i data-lucide="github"></i>Check Now</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.rektech.settingwalaapp" target="_blank" class="card-link"><i class="fab fa-google-play"></i>Check on Play Store</a>
                     </div>
                 </div>
 
 
                     <div class="project-card">
+                    <div class="card-image"><img src="rproperty.png" alt="R-Property-Hub"></div>
                     <div class="card-content">
                         <h3>R-Property-Hub</h3>
-                        <p>Property Details Viewer is a simple, lightweight app designed to display property information in a clean and organized way. The app focuses on clarity and ease of use, allowing users to view all property-related details without distractions.</p>
+                        <p>A lightweight real estate application offering clean, distraction-free property listings. Optimized for fast data retrieval and an intuitive browsing experience.</p>
                         <div class="tags">
                             <span class="tag">Flutter</span>
                             <span class="tag">GetX</span>
@@ -276,15 +234,16 @@
                         </div>
                     </div>
                     <div class="card-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.app.rpropertyhub" target="_blank" class="card-link"><i data-lucide="github"></i>Check Now</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.app.rpropertyhub" target="_blank" class="card-link"><i class="fab fa-google-play"></i>Check on Play Store</a>
                     </div>
                 </div>
                 
 
                     <div class="project-card">
+                    <div class="card-image"><img src="reelsereal.png" alt="Reel se Real Movie Star"></div>
                     <div class="card-content">
                         <h3>Reel se Real Movie Star</h3>
-                        <p>Movie Auditions is a professional casting and talent discovery platform designed specifically for casting directors, filmmakers, production houses, and industry professionals. The app simplifies how casting calls, movie auditions, and role requirements are shared with actors and performers, creating a structured and efficient casting workflow.</p>
+                        <p>A professional talent discovery platform streamlining casting workflows. Connects directors with actors via seamless audition scheduling and role management.</p>
                         <div class="tags">
                             <span class="tag">Flutter</span>
                             <span class="tag">GetX</span>
@@ -294,13 +253,11 @@
                         </div>
                     </div>
                     <div class="card-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.app.rpropertyhub" target="_blank" class="card-link"><i data-lucide="github"></i>Check Now</a>
+                        <a href="https://play.google.com/store/search?q=reel+se+real+movie+star" target="_blank" class="card-link"><i class="fab fa-google-play"></i>Check on Play Store</a>
                     </div>
                 </div>
             </div>
             
-            <div class="projects-footer">
-                <a href="https://github.com/jigneshpravinbhairathod" target="_blank" class="inline-link">See More on GitHub <i data-lucide="arrow-right"></i></a>
             </div>
         </div>
     </section>
@@ -347,12 +304,9 @@
                         <h3 class="timeline-title">Flutter Developer</h3>
                         <h4 class="timeline-subtitle">Retro Developers</h4>
                         <ul class="timeline-bullets">
-                            <li>Led full-cycle development of Flutter apps from planning to deployment on Android & iOS.</li>
-                            <li>Architected clean, maintainable codebases using Dart and Provider for state management.</li>
-                            <li>Integrated Firebase, RESTful APIs, and third-party services to enhance app functionality.</li>
-                            <li>Collaborated closely with UI/UX designers to deliver pixel-perfect, responsive interfaces.</li>
-                            <li>Mentored junior developers through code reviews and technical knowledge sharing.</li>
-                            <li>Ensured app performance optimization, achieving fast load times and smooth animations.</li>
+                            <li>Leading full-cycle Flutter app development from conceptualization to App Store and Play Store deployment.</li>
+                            <li>Ensuring code quality and performance optimization, achieving 60fps smooth animations across mobile devices.</li>
+                            <li>Mentoring team members and establishing best practices for scalable, cross-platform mobile architecture.</li>
                         </ul>
                     </div>
                 </div>
@@ -362,14 +316,11 @@
                     <div class="timeline-content">
                         <span class="timeline-date">Nov 2025 - Feb 2026</span>
                         <h3 class="timeline-title">Flutter Developer</h3>
-                        <h4 class="timeline-subtitle">rektech</h4>
+                        <h4 class="timeline-subtitle">Rektech</h4>
                         <ul class="timeline-bullets">
-                            <li>Led full-cycle development of Flutter apps from planning to deployment on Android & iOS.</li>
-                            <li>Architected clean, maintainable codebases using Dart and Provider for state management.</li>
-                            <li>Integrated Firebase, RESTful APIs, and third-party services to enhance app functionality.</li>
-                            <li>Collaborated closely with UI/UX designers to deliver pixel-perfect, responsive interfaces.</li>
-                            <li>Mentored junior developers through code reviews and technical knowledge sharing.</li>
-                            <li>Ensured app performance optimization, achieving fast load times and smooth animations.</li>
+                            <li>Architected robust app structures utilizing GetX and Provider for highly efficient state management.</li>
+                            <li>Implemented Firebase Authentication, Cloud Firestore, and Push Notifications for enhanced user engagement.</li>
+                            <li>Streamlined the development process by writing reusable UI components and modular Dart code.</li>
                         </ul>
                     </div>
                 </div>
@@ -377,16 +328,13 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">MAR 2025 - NOV 2025</span>
+                        <span class="timeline-date">Mar 2025 - Nov 2025</span>
                         <h3 class="timeline-title">Flutter Developer</h3>
                         <h4 class="timeline-subtitle">MDIDM INFOWAY</h4>
                         <ul class="timeline-bullets">
-                            <li>Led full-cycle development of Flutter apps from planning to deployment on Android & iOS.</li>
-                            <li>Architected clean, maintainable codebases using Dart and Provider for state management.</li>
-                            <li>Integrated Firebase, RESTful APIs, and third-party services to enhance app functionality.</li>
-                            <li>Collaborated closely with UI/UX designers to deliver pixel-perfect, responsive interfaces.</li>
-                            <li>Mentored junior developers through code reviews and technical knowledge sharing.</li>
-                            <li>Ensured app performance optimization, achieving fast load times and smooth animations.</li>
+                            <li>Developed and maintained responsive, cross-platform mobile applications using Flutter and Dart.</li>
+                            <li>Integrated RESTful APIs and optimized local data storage with SQLite for offline functionality.</li>
+                            <li>Collaborated closely with UI/UX teams to accurately translate Figma designs into pixel-perfect screens.</li>
                         </ul>
                     </div>
                 </div>
@@ -410,17 +358,6 @@
                         <p>Core foundation in computer science and programming. Status: Completed.</p>
                     </div>
                 </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2019 - 2020</span>
-                        <h3 class="timeline-title">12th Commerce</h3>
-                        <h4 class="timeline-subtitle">Lal Bahadur School, Jamkandorana | Gujarat Board</h4>
-                        <p>Status: Completed.</p>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -431,12 +368,12 @@
             <div class="contact-wrapper">
                 <div class="contact-header">
                     <h2>Let's Build Something Together.</h2>
-                    <p>I'm currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    <p>I'm currently open for new opportunities. If you are looking for <strong>Custom Flutter App Development</strong>, <strong>UI/UX Implementation</strong>, or <strong>API & Backend Integration</strong> services, feel free to contact me. Whether you have a project idea or just want to say hi, I'll try my best to get back to you!</p>
                     
                     <div class="contact-info">
-                        <div class="info-line"><i data-lucide="map-pin"></i> Gujarat, India</div>
+                        <div class="info-line"><i data-lucide="map-pin"></i> Rajkot, Gujarat, India</div>
                         <div class="info-line"><i data-lucide="phone"></i> +91 6359453558</div>
-                        <div class="info-line"><i data-lucide="mail"></i> jignesh.rathod@example.com</div>
+                        <div class="info-line"><i data-lucide="mail"></i> <a href="mailto:jigneshrathod1102@gmail.com" style="color: inherit; text-decoration: none;">jigneshrathod1102@gmail.com</a></div>
                     </div>
                 </div>
                 
