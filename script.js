@@ -67,10 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                // Trigger stat counters if it's the stats section
-                if (entry.target.classList.contains('stats-container')) {
-                    startCounters();
-                }
                 observer.unobserve(entry.target);
             }
         });
@@ -81,38 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     revealElements.forEach(el => revealObserver.observe(el));
-
-    // 5. Stat Number Count-up Animation
-    let countersStarted = false;
-    function startCounters() {
-        if (countersStarted) return;
-        countersStarted = true;
-        
-        const statNumbers = document.querySelectorAll('.stat-number');
-        
-        statNumbers.forEach(stat => {
-            const target = parseInt(stat.getAttribute('data-target'));
-            const duration = 2000; // ms
-            const frameRate = 30; // ms
-            const totalFrames = duration / frameRate;
-            let currentFrame = 0;
-            
-            const timer = setInterval(() => {
-                currentFrame++;
-                const progress = currentFrame / totalFrames;
-                // Easing out
-                const easeOutProgress = 1 - Math.pow(1 - progress, 3);
-                const currentCount = Math.floor(target * easeOutProgress);
-                
-                stat.textContent = currentCount + (target === 99 ? '%' : '+');
-                
-                if (currentFrame === totalFrames) {
-                    clearInterval(timer);
-                    stat.textContent = target + (target === 99 ? '%' : '+');
-                }
-            }, frameRate);
-        });
-    }
 
     // 6. Smooth Scrolling for Anchor Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -128,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 7. Contact Form via WhatsApp
+    // 7. Contact Form via Email (mailto)
     const contactForm = document.getElementById('contactForm');
     const toast = document.getElementById('toast');
 
@@ -139,25 +103,25 @@ document.addEventListener('DOMContentLoaded', () => {
             const submitBtn = this.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
             
-            submitBtn.innerHTML = 'Sending...';
+            submitBtn.innerHTML = 'Opening Mail...';
             submitBtn.disabled = true;
             
             // Get form values
             const fullName = this.fullName.value;
             const email = this.email.value;
             const mobile = this.mobile.value;
-            const subject = this.subject.value || 'No Subject';
+            const subject = this.subject.value || 'Project Inquiry';
             const message = this.message.value;
             
-            // Construct WhatsApp Message
-            const waText = `Hello Jignesh,%0A%0A*Name:* ${fullName}%0A*Email:* ${email}%0A*Mobile:* ${mobile}%0A*Subject:* ${subject}%0A%0A*Message:* ${message}`;
-            const whatsappUrl = `https://wa.me/916359453558?text=${waText}`;
+            // Construct mailto link
+            const mailBody = `Name: ${fullName}%0AEmail: ${email}%0AMobile: ${mobile}%0A%0A${message}`;
+            const mailtoUrl = `mailto:jigneshrathod1102@gmail.com?subject=${encodeURIComponent(subject)}&body=${mailBody}`;
             
-            // Open WhatsApp in a new tab
-            window.open(whatsappUrl, '_blank');
+            // Open Email Client
+            window.location.href = mailtoUrl;
             
-            // Show Success Message
-            toast.innerHTML = "Opening WhatsApp...";
+            // Show Success Toast
+            toast.innerHTML = '✉️ Opening your mail app...';
             toast.classList.add('show');
             
             // Reset Form
