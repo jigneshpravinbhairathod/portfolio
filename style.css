@@ -67,7 +67,7 @@ body {
 }
 
 .section-padding {
-    padding: 8rem 0;
+    padding: 4.5rem 0;
 }
 
 /* Typography Hierarchy */
@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-header {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 .section-header h2 {
@@ -394,9 +394,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* About Section */
 .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .section-label {
@@ -530,14 +530,14 @@ h1, h2, h3, h4, h5, h6 {
 /* Projects Section */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
 }
 
 .project-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
-    padding: 3rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -552,9 +552,34 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(145deg, #1c1c1c, #141414);
 }
 
+.card-image {
+    width: calc(100% + 3rem);
+    margin: -1.5rem -1.5rem 1rem -1.5rem;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 4px 4px 0 0;
+    background: #0d0d0d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: var(--transition-smooth);
+    padding: 0.75rem;
+}
+
+.project-card:hover .card-image img {
+    transform: scale(1.04);
+}
+
 .card-content h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Services */
@@ -589,7 +614,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-content p {
     color: var(--text-muted);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
 }
 
 .tags {
@@ -853,14 +879,23 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 992px) {
     .hero-container, .about-grid {
         flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-right {
+        margin-top: 3rem;
     }
     
     .role-headline {
         font-size: 3.5rem;
     }
     
-    .hero-right {
-        margin-top: 4rem;
+    .quote-block {
+        text-align: left;
+    }
+
+    .hero-cta {
+        justify-content: center;
     }
     
     .contact-info {
@@ -868,15 +903,19 @@ h1, h2, h3, h4, h5, h6 {
         align-items: center;
         gap: 1rem;
     }
-    
-    .stats-container {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media (max-width: 768px) {
     .hide-mobile {
         display: none !important;
+    }
+
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .section-padding {
+        padding: 3rem 0;
     }
 
     .top-bar-container {
@@ -897,10 +936,75 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .section-header h2, .contact-header h2 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
     }
     
     .hero {
-        padding-top: 80px;
+        padding-top: 60px;
+    }
+
+    .project-card {
+        padding: 1.5rem;
+    }
+
+    .card-image {
+        width: calc(100% + 3rem);
+        margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+        height: 130px;
+    }
+
+    .timeline-item {
+        padding-left: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .pull-quote {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .role-headline {
+        font-size: 2rem;
+    }
+
+    .tech-tabs {
+        flex-direction: column;
+        align-items: center;
+        border-bottom: none;
+    }
+
+    .tab-btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+    }
+
+    .tab-btn.active {
+        border-color: var(--accent);
+    }
+    
+    .tab-btn::after {
+        display: none;
+    }
+
+    .social-row {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
