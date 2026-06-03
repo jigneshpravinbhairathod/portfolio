@@ -32,6 +32,7 @@
     <div class="scroll-progress-container">
         <div class="scroll-progress" id="scroll-progress"></div>
     </div>
+    <!-- Custom Cursor (Removed) -->
     
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
@@ -75,9 +76,9 @@
                     I specialize in clean UI, API integration, and cross-platform development for Android and iOS using Dart. I have extensive experience with Firebase, REST APIs, state management (Provider/GetX), and turning Figma designs into real, high-performance apps.
                 </p>
                 
-                <div class="hero-cta reveal-text" style="animation-delay: 0.4s;">
-                    <a href="jignesh_rathod_flutter_developer_resume-2.pdf" download class="btn btn-primary">Download Resume</a>
-                    <div class="social-row">
+                <div class="hero-cta">
+                    <a href="jignesh_rathod_flutter_developer_resume-2.pdf" download class="btn btn-primary reveal-text" style="animation-delay: 0.4s;">Download Resume</a>
+                    <div class="social-row reveal-text" style="animation-delay: 0.5s;">
                         <a href="https://www.linkedin.com/in/jigneshrathod1102/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in fa-lg"></i></a>
                         <a href="https://wa.me/916359453558" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp fa-lg"></i></a>
                         <a href="mailto:jigneshrathod1102@gmail.com" title="Email"><i class="fas fa-envelope fa-lg"></i></a>
@@ -90,7 +91,6 @@
             <div class="hero-right reveal-fade" style="animation-delay: 0.5s;">
                 <div class="photo-container">
                     <img src="PHOTO.png" alt="Jignesh Rathod" class="profile-photo">
-                    <div class="photo-decoration"></div>
                 </div>
             </div>
         </div>
@@ -116,7 +116,12 @@
 
     <!-- Tech Stack Section -->
     <section class="tech section-padding" id="tech">
-        <div class="container reveal-on-scroll">
+        <svg class="tech-bg-svg" width="400" height="400" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="0.5" fill="none" stroke-dasharray="2 4"/>
+            <circle cx="50" cy="50" r="30" stroke="currentColor" stroke-width="0.5" fill="none"/>
+            <circle cx="50" cy="50" r="20" stroke="currentColor" stroke-width="1" fill="none" stroke-dasharray="5 5"/>
+        </svg>
+        <div class="container reveal-on-scroll" style="position: relative; z-index: 1;">
             <div class="section-header">
                 <h2>The Tools of My Trade</h2>
                 <p class="subtitle">Technologies I use to build robust applications.</p>
